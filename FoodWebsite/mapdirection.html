@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>
+    Delight Foods
+  </title>
+  <meta charset="UTF-8">
+  <script>
+    var daddr = window.location.search.slice(1);
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(data){
+        if (data.coords) {
+          window.location = 'https://maps.google.fr/maps?saddr=Karachi,+Sindh,+Pakistan';
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
